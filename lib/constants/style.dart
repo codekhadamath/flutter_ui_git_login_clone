@@ -1,0 +1,25 @@
+import 'package:flutter/material.dart';
+
+class AppColor {
+  static const primary = Color(0xFF54A258);
+  static const secondary = Color(0xFF2E67D3);
+  static const lightGrey = Color(0xFFF5F8FA);
+  static const darkGrey = Color(0xFFD6DBE0);
+  static const warning = Color(0xFFBE3537);
+  static const warningLight = Color(0xFFF8CECC);
+}
+
+Map<int, Color> color = {
+  50: const Color.fromRGBO(84, 162, 88, .1),
+  100: const Color.fromRGBO(84, 162, 88, .2),
+  200: const Color.fromRGBO(84, 162, 88, .3),
+  300: const Color.fromRGBO(84, 162, 88, .4),
+  400: const Color.fromRGBO(84, 162, 88, .5),
+  500: const Color.fromRGBO(84, 162, 88, .6),
+  600: const Color.fromRGBO(84, 162, 88, .7),
+  700: const Color.fromRGBO(84, 162, 88, .8),
+  800: const Color.fromRGBO(84, 162, 88, .9),
+  900: const Color.fromRGBO(84, 162, 88, 1),
+};
+
+MaterialColor primarySwatchColor = MaterialColor(0xFF54A258, color);
