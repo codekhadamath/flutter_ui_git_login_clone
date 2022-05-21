@@ -84,11 +84,12 @@ class _GitHubLoginState extends State<GitHubLogin> {
                     margin: const EdgeInsets.only(top: 25.0),
                     padding: const EdgeInsets.all(20.0),
                     decoration: BoxDecoration(
-                        color: AppColor.warningLight.withOpacity(.5),
+                        color: Theme.of(context).colorScheme.errorContainer.withOpacity(.4),
                         borderRadius: BorderRadius.circular(6.0),
                         border: Border.all(
-                            color: AppColor.warningLight, width: 2.0)),
+                            color: Theme.of(context).colorScheme.errorContainer, width: 2.0)),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
                           'Incorrect username or password',
@@ -117,7 +118,7 @@ class _GitHubLoginState extends State<GitHubLogin> {
                 Container(
                   width: _size.width,
                   decoration: BoxDecoration(
-                    color: Theme.of(context).backgroundColor,
+                      color: Theme.of(context).backgroundColor,
                       borderRadius: BorderRadius.circular(10.0),
                       border: Border.all(color: Theme.of(context).colorScheme.tertiary)),
                   child: Padding(
@@ -154,7 +155,7 @@ class _GitHubLoginState extends State<GitHubLogin> {
                                       style: Theme.of(context)
                                           .textTheme
                                           .subtitle2!
-                                          .copyWith(color: Theme.of(context).colorScheme.secondary),
+                                          .copyWith(color: AppColor.secondary),
                                       recognizer: TapGestureRecognizer()
                                         ..onTap = () {}))
                             ],
@@ -222,7 +223,7 @@ class _GitHubLoginState extends State<GitHubLogin> {
                           style: Theme.of(context)
                               .textTheme
                               .subtitle1!
-                              .copyWith(color: Theme.of(context).colorScheme.secondary))
+                              .copyWith(color: AppColor.secondary))
                     ]),
                   ),
                 )
@@ -244,21 +245,21 @@ class _GitHubLoginState extends State<GitHubLogin> {
                   style: Theme.of(context)
                       .textTheme
                       .subtitle2!
-                      .copyWith(color: Theme.of(context).colorScheme.secondary),
+                      .copyWith(color: AppColor.secondary),
                 ),
                 Text(
                   'Privacy',
                   style: Theme.of(context)
                       .textTheme
                       .subtitle2!
-                      .copyWith(color: Theme.of(context).colorScheme.secondary),
+                      .copyWith(color: AppColor.secondary),
                 ),
                 Text(
                   'Security',
                   style: Theme.of(context)
                       .textTheme
                       .subtitle2!
-                      .copyWith(color: Theme.of(context).colorScheme.secondary),
+                      .copyWith(color: AppColor.secondary),
                 ),
                 Text(
                   'Contact GitHub',

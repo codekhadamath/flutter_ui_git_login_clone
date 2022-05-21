@@ -42,14 +42,13 @@ class ThemeProvider {
               borderRadius: BorderRadius.circular(8.0))));
 
   static final lightTheme = lightThemeData.copyWith(
-      colorScheme: lightThemeData.colorScheme
-          .copyWith(secondary: AppColor.secondary, tertiary: AppColor.darkGrey));
+      colorScheme: lightThemeData.colorScheme.copyWith(
+          secondary: AppColor.secondary, tertiary: AppColor.darkGrey, errorContainer: AppColor.warningLight));
 
   // =========================
   //      Dark Theme Data
   // =========================
-
-  static final darkColorData = ThemeData(
+  static final darkThemeData = ThemeData(
       primarySwatch: primarySwatchColor,
       scaffoldBackgroundColor: AppColorDark.darkBlack,
       brightness: Brightness.dark,
@@ -85,7 +84,9 @@ class ThemeProvider {
                   const BorderSide(color: AppColorDark.secondary, width: 2.5),
               borderRadius: BorderRadius.circular(8.0))));
 
-  static final darkTheme = darkColorData.copyWith(
-      colorScheme: darkColorData.colorScheme
-          .copyWith(secondary: AppColorDark.secondary, tertiary: AppColorDark.lightBlack));
+  static final darkTheme = darkThemeData.copyWith(
+      colorScheme: darkThemeData.colorScheme.copyWith(
+          secondary: AppColorDark.secondary,
+          tertiary: AppColorDark.lightBlack,
+          errorContainer: AppColorDark.warningLight));
 }

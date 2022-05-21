@@ -15,6 +15,7 @@ class AppColorDark {
   static const black = Color(0xFF171B21);
   static const lightBlack = Color(0xFF31363C);
   static const whiteGrey = Color(0xFFCAD1D8);
+  static const warningLight = Color(0xFF773633);
 }
 
 Map<int, Color> color = {
@@ -30,18 +31,4 @@ Map<int, Color> color = {
   900: const Color.fromRGBO(84, 162, 88, 1),
 };
 
-Map<int, Color> colorDark = {
-  50: const Color.fromRGBO(106, 162, 245, .1),
-  100: const Color.fromRGBO(106, 162, 245, .2),
-  200: const Color.fromRGBO(106, 162, 245, .3),
-  300: const Color.fromRGBO(106, 162, 245, .4),
-  400: const Color.fromRGBO(106, 162, 245, .5),
-  500: const Color.fromRGBO(106, 162, 245, .6),
-  600: const Color.fromRGBO(106, 162, 245, .7),
-  700: const Color.fromRGBO(106, 162, 245, .8),
-  800: const Color.fromRGBO(106, 162, 245, .9),
-  900: const Color.fromRGBO(106, 162, 245, 1),
-};
-
 MaterialColor primarySwatchColor = MaterialColor(0xFF54A258, color);
-MaterialColor primarySwatchColorDark = MaterialColor(0xFF6AA2F5, color);
